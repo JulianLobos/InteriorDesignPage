@@ -1,0 +1,263 @@
+body{
+    background-color: $bg-color;
+    color: white;
+    font-family: $font-primary;
+    font-size: 1rem;
+    header{
+        font-size: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        padding: 2rem 8rem 2rem 15rem;
+        width: 100%;
+        .menuList{
+            display: flex;
+            a{
+                color: white;
+                .menuItem{
+                    margin: 0 0 0 1.5rem;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    .hero{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../img/bg-image.jpg");
+        height: 80vh;
+        width: auto;
+        margin: 0 0 0 150px;
+
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        .yourInfo{
+            width: 500px;
+            text-align: right;
+            margin: 0 8rem 0 0;
+            .yourName{
+                font-size: 3rem;
+            }
+            .infoText{
+                font-family: $font-secundary;
+                margin: 0 0 1rem 0;
+            }
+            .heroButton{
+                background-color: $primary-color;
+                text-transform: uppercase;
+                font-family: $font-primary;
+                color: rgb(34, 34, 34);
+                font-weight: 500;
+                border: none;
+                padding: 0.25rem 1.25rem;
+                border-radius: 20px;
+                cursor: pointer;
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: $hover-color;
+                }
+            }
+        }
+    }
+    .navigation{
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 150px;
+        height: 80vh;
+        left: 0;
+        top: 0;
+        background-color: $black-color;
+        .logo{
+            font-size: 3rem;
+            line-height: 39px;
+            letter-spacing: -4px;
+            font-weight: 600;
+            color: #7e7e7e;
+        }
+        .yourBrand{
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            color: #7e7e7e;
+            cursor: crosshair;
+        }
+        .socialIcons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 20px;
+                height: 20px;
+                margin: 0 0 0.85rem 0;
+                filter: invert(53%) sepia(0%) saturate(4%) hue-rotate(145deg) brightness(94%) contrast(92%);
+                transition: all 0.3s ease;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+    .aboutUs{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 2rem 0;
+        .aboutUsBackground{
+            font-size: 7rem;
+            font-weight: 900;
+            position: absolute;
+            z-index: -1;
+            left: 2rem;
+            color: #2b2b2b;
+            cursor: default;
+        }
+        .aboutUsTitle{
+            margin: 1.5rem 0;
+            font-size: 2.75rem;
+            span{
+                color: $primary-color;
+            }
+        }
+        .aboutGrid{
+            display: grid;
+            grid-template-columns:33% 33% 33%;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+            div{
+                margin: 0 1.5rem;
+                .aboutTitle{
+                    font-family: $font-secundary;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin: 0 0 0.5rem 0;
+                }
+                .aboutText{
+                    font-family: $font-secundary;
+
+                }
+                .conocimiento{
+                    font-family: $font-primary;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    margin: 0 0 0.5rem 0;
+                    img{
+                        filter: invert(74%) sepia(80%) saturate(422%) hue-rotate(357deg) brightness(95%) contrast(96%);
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+                img{
+                    width: 250px;
+                    height: 250px;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .especializacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: $font-secundary;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+            .aboutImage{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .ourProjects{
+        height: auto;
+        margin: 0 0 3rem 0;
+        .projectsTitle{
+            text-align: center;
+            font-size: 2.75rem;
+            text-transform: uppercase;
+            span{
+                color: $primary-color;
+            }
+        }
+        .projectsTitleBackground{
+            text-align: end;
+            font-size: 7rem;
+            font-weight: 900;
+            position: relative;
+            z-index: -1;
+            top: -70px;
+            right: 2rem;
+            color: #2b2b2b;
+            cursor: default;
+        }
+
+        .projects{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin: -6rem 0 0 0;
+            .pr{
+                height: 80vh;
+                display: flex;
+                align-items: flex-end;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+                .projectTitle{
+                    text-transform: uppercase;
+                    margin: 1.5rem;
+                    writing-mode:vertical-rl;
+                    transform: rotate(-180deg);
+                    transition: all 0.3s ease;
+                    font-family: $font-primary;
+                    letter-spacing: 4px;
+                }
+                &:hover{
+                    .projectTitle{
+                        writing-mode: unset;
+                        transform: none;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            .project1{
+                background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/project-one.jpg");
+                &:hover{
+                    background-image: url("../img/project-one.jpg");
+                }
+            }
+            .project2{
+                background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/project-two.jpg");
+                &:hover{
+                    background-image: url("../img/project-two.jpg");
+                }
+            }
+            .project3{
+                background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/project-three.jpg");
+                &:hover{
+                    background-image: url("../img/project-three.jpg");
+                }
+            }
+            .project4{
+                background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/project-four.jpg");
+                &:hover{
+                    background-image: url("../img/project-four.jpg");
+                }
+            }
+        }
+    }
+}
