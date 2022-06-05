@@ -84,6 +84,7 @@ body{
         .yourBrand{
             text-transform: uppercase;
             writing-mode: vertical-rl;
+            transform: rotate(180deg);
             color: #7e7e7e;
             cursor: crosshair;
         }
@@ -218,10 +219,14 @@ body{
                 background-position: center;
                 cursor: pointer;
                 .projectTitle{
+                    font-size: 0.75rem;
                     text-transform: uppercase;
-                    margin: 1.5rem;
-                    writing-mode:vertical-rl;
-                    transform: rotate(-180deg);
+                    margin: 0.25rem;
+                    padding: 0.5rem;
+                    background-color: rgba(0,0,0,0.3);
+                    border-radius: 20px;
+                    transform: rotate(-90deg);
+                    transform-origin: 0% 0%;
                     transition: all 0.3s ease;
                     font-family: $font-primary;
                     letter-spacing: 4px;
@@ -256,6 +261,119 @@ body{
                 background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/project-four.jpg");
                 &:hover{
                     background-image: url("../img/project-four.jpg");
+                }
+            }
+        }
+    }
+    .experience{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2rem;
+        .experienceContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .number{
+                font-size: 10rem;
+                font-weight: 700;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: url('../img/pattern-yellow.jpg');
+                background-size: cover;
+            }
+            .experienceText{
+                font-family: $font-secundary;
+                margin: 100px 0 0 0;
+                span{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: $primary-color;
+                }
+            }
+        }
+        .clients{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .clientsBackground{
+                font-size: 7rem;
+                font-weight: 900;
+                position: absolute;
+                transform: translateY(-7rem);
+                z-index: -1;
+                left: 2rem;
+                color: #2b2b2b;
+                cursor: default;
+            }
+            .clientsTitle{
+                font-size: 2rem;
+                text-transform: uppercase;
+                margin: 0 0 2rem 0;
+                span{
+                    color: $primary-color;
+                }
+            }
+            .clientsIcons{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 2rem 0;
+                .client{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px 20px;
+                    img{
+                        width: 35px;
+                        margin: 0 10px 0 0;
+                        filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(169deg) brightness(93%) contrast(87%);
+                    }
+                    .clientName{
+                        text-transform: uppercase;
+                        font-size: 1.25rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        button{
+            background-color: $primary-color;
+            font-family: $font-primary;
+            font-weight: 600;
+            font-size: 1.25rem;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            padding: 0.25rem 1.25rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+            img{
+                width: 16px;
+                margin: 0 0 0 4px;
+                translate: all 0.3s ease;
+            }
+            &:hover{
+                background-color: $hover-color;
+                img{
+                    filter: invert(14%) sepia(63%) saturate(0%) hue-rotate(285deg) brightness(108%) contrast(107%);
+                    transform: translateX(4px);
+                    translate: all 0.3s ease;
                 }
             }
         }

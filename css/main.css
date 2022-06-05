@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -80,6 +81,7 @@ body {
     body .navigation .yourBrand {
       text-transform: uppercase;
       writing-mode: vertical-rl;
+      transform: rotate(180deg);
       color: #7e7e7e;
       cursor: crosshair; }
     body .navigation .socialIcons {
@@ -191,10 +193,14 @@ body {
         background-position: center;
         cursor: pointer; }
         body .ourProjects .projects .pr .projectTitle {
+          font-size: 0.75rem;
           text-transform: uppercase;
-          margin: 1.5rem;
-          writing-mode: vertical-rl;
-          transform: rotate(-180deg);
+          margin: 0.25rem;
+          padding: 0.5rem;
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 20px;
+          transform: rotate(-90deg);
+          transform-origin: 0% 0%;
           transition: all 0.3s ease;
           font-family: "Oswald", sans-serif;
           letter-spacing: 4px; }
@@ -218,3 +224,94 @@ body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/project-four.jpg"); }
         body .ourProjects .projects .project4:hover {
           background-image: url("../img/project-four.jpg"); }
+  body .experience {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem; }
+    body .experience .experienceContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body .experience .experienceContainer .number {
+        font-size: 10rem;
+        font-weight: 700;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: url("../img/pattern-yellow.jpg");
+        background-size: cover; }
+      body .experience .experienceContainer .experienceText {
+        font-family: "Raleway", sans-serif;
+        margin: 100px 0 0 0; }
+        body .experience .experienceContainer .experienceText span {
+          font-size: 1.5rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #edc531; }
+    body .experience .clients {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      body .experience .clients .clientsBackground {
+        font-size: 7rem;
+        font-weight: 900;
+        position: absolute;
+        transform: translateY(-7rem);
+        z-index: -1;
+        left: 2rem;
+        color: #2b2b2b;
+        cursor: default; }
+      body .experience .clients .clientsTitle {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 0 0 2rem 0; }
+        body .experience .clients .clientsTitle span {
+          color: #edc531; }
+      body .experience .clients .clientsIcons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 2rem 0; }
+        body .experience .clients .clientsIcons .client {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px 20px; }
+          body .experience .clients .clientsIcons .client img {
+            width: 35px;
+            margin: 0 10px 0 0;
+            filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(169deg) brightness(93%) contrast(87%); }
+          body .experience .clients .clientsIcons .client .clientName {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            margin: 0; }
+    body .experience button {
+      background-color: #edc531;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      padding: 0.25rem 1.25rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07); }
+      body .experience button img {
+        width: 16px;
+        margin: 0 0 0 4px;
+        translate: all 0.3s ease; }
+      body .experience button:hover {
+        background-color: #dbb42c; }
+        body .experience button:hover img {
+          filter: invert(14%) sepia(63%) saturate(0%) hue-rotate(285deg) brightness(108%) contrast(107%);
+          transform: translateX(4px);
+          translate: all 0.3s ease; }
