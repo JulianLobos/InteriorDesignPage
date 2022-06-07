@@ -1,0 +1,63 @@
+@media(max-width: 900px){
+    body{
+        header{
+            padding: 2rem 3rem 2rem 10rem;
+            .menuList{
+                a{
+                    .menuItem{
+                        margin: 0 0 0 0.75rem;
+                    }
+                }
+            }
+        }
+        .hero{
+            margin: 0 0 0 100px;
+            .yourInfo{
+                margin: 0 3rem 0 0;
+            }
+        }
+        .navigation{
+            width: 100px;
+        }
+
+        .aboutUs{
+            height: auto;
+            .aboutGrid{
+                grid-template-columns: 1fr;
+                div{
+                    .aboutTitle{
+                        margin: 0 4rem 0.5rem 4rem;    
+                    }
+                    .aboutText{
+                        margin: 0 4rem 2rem 4rem;
+                    }
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+                .especializacion{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin: 0 0 2rem 0;
+                    p{
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .conocimiento{
+                        margin: 0.5rem 1rem;
+                    }
+                }
+            }
+        }
+        .contact{
+            .contactInfo{
+                flex-direction: column-reverse;
+                .contactAdress{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
