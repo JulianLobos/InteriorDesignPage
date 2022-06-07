@@ -472,4 +472,24 @@ body{
             }
         }
     }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: end;
+        padding: 15px 60px;
+        margin: 0 0 15px 0;
+        .logoFooter{
+            font-size: 3rem;
+            line-height: 39px;
+            letter-spacing: -4px;
+            font-weight: 600;
+            color: #7e7e7e;
+        }
+        .author, .derechos{
+            font-family: $font-secundary;
+            text-align: center;
+            color: #7e7e7e;
+        }
+    }
 }

@@ -387,3 +387,20 @@ body {
               filter: invert(14%) sepia(63%) saturate(0%) hue-rotate(285deg) brightness(108%) contrast(107%);
               transform: translateX(4px);
               translate: all 0.3s ease; }
+  body footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: end;
+    padding: 15px 60px;
+    margin: 0 0 15px 0; }
+    body footer .logoFooter {
+      font-size: 3rem;
+      line-height: 39px;
+      letter-spacing: -4px;
+      font-weight: 600;
+      color: #7e7e7e; }
+    body footer .author, body footer .derechos {
+      font-family: "Raleway", sans-serif;
+      text-align: center;
+      color: #7e7e7e; }
