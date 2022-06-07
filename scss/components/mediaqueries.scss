@@ -61,3 +61,164 @@
         }
     }
 }
+
+@media(max-width: 798px){
+    body{
+        header{
+            padding: 2rem 1rem 2rem 4rem;
+            .myNumber{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .menuList{
+                position: absolute;
+                width: 100%;
+                padding: 0 0 0 50px;
+                background-color: $bg-color;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                padding: 25vh 0 0 0;
+                display: none;
+                a{
+                    padding: 0 0 0 50px;
+                    width: 100%;
+                    .menuItem{
+                        padding: 0 0 0 50px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0;
+                    }
+                    &:hover{
+                        background-color: $black-color;
+                    }
+                }
+            }
+            .hamburgerBtn{
+                display: inline-block;
+                z-index: 1;
+                margin: 0;
+            }
+            #hamburgerBtn.on .one {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+              
+            #hamburgerBtn.on .two {
+            opacity: 0;
+            }
+            
+            #hamburgerBtn.on .three {
+            transform: rotate(-45deg) translate(3px, -4px);
+            }
+        }
+        .navigation{
+            width: 50px;
+            .logo{
+                font-size: 2rem;
+                line-height: 25px;
+            }
+        }
+        .aboutUs{
+            .aboutUsBackground{
+                font-size: 5rem;
+            }
+            .aboutUsTitle{
+                font-size: 2rem;
+            }
+            .aboutGrid{
+                div{
+                    .aboutTitle{
+                        margin: 2rem;
+                    }
+                    .aboutText{
+                        margin: 2rem;
+                    }
+                }
+            }
+        }
+        .hero{
+            margin: 0 0 0 50px;
+            .yourInfo{
+                margin: 0 1rem 0 1rem;
+            }
+        }
+        .ourProjects{
+            margin: 0;
+            .projectsTitle{
+                font-size: 2rem;
+            }
+            .projectsTitleBackground{
+                font-size: 5rem;
+            }
+            .projects{
+                grid-template-columns: 100%;
+                .pr{
+                    height: 50vh;
+                }
+            }
+        }
+        .experience{
+            height: auto;
+            margin: 0 1rem 3rem 1rem;
+            .experienceContainer{
+                padding: 0 2rem;
+            }
+            .clients{
+                .clientsBackground{
+                    font-size: 5rem;
+                    transform: translateY(-11rem);
+                }
+            }
+        }
+        .contact{
+            height: auto;
+            .contactTitle{
+                font-size: 2rem;
+            }
+            .contactBackground{
+                font-size: 5rem;
+                transform: translateY(-11rem);
+            }
+            .contactInfo{
+                height: auto;
+                .contactForm{
+                    form{
+                        margin: 1.5rem 0;
+                        grid-template-columns: 45% 45%;
+                        justify-content: center;
+                        .contactName, .contactEmail{
+                            grid-column: 1;
+                        }
+                        .contactPhone, .contactCompany{
+                            grid-column: 2;
+                        }
+                        .contactMessage{
+                            grid-column: 1/ span 2;
+                            grid-row: 3;
+                        }
+                        .contactButton{
+                            grid-row: 4;
+                            grid-column: 1 / span 2;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            padding: 1rem;
+            grid-template-columns: 100%;
+            .logoFooter{
+                font-size: 2rem;
+                line-height: 25px;
+                text-align: center;
+                margin: 0 0 0.25rem 0;
+            }
+            .author, .derechos{
+                font-size: 0.75rem;
+            }
+        }
+    }
+}

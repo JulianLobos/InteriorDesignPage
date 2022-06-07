@@ -10,23 +10,25 @@
 <body>
     <header>
         <div class="myNumber">+54 3525 - 300610</div>
-        <ul class="menuList">
-            <a href="#">
-                <li class="menuItem">Home</li>
-            </a>
-            <a href="#">
+        <ul class="menuList" id="menu">
+            <a href="#about" class="menuItemOpt">
                 <li class="menuItem">About Us</li>
             </a>
-            <a href="#">
+            <a href="#projects" class="menuItemOpt">
                 <li class="menuItem">Projects</li>
             </a>
-            <a href="#">
+            <a href="#clients" class="menuItemOpt">
                 <li class="menuItem">Clients</li>
             </a>
-            <a href="#">
+            <a href="#contact" class="menuItemOpt">
                 <li class="menuItem">Contact</li>
             </a>
         </ul>
+        <div class="hamburgerBtn" id="hamburgerBtn">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
     </header>
     <div class="hero">
         <div class="yourInfo">
@@ -45,7 +47,7 @@
             <img src="img/facebook-f-brands.svg" alt="twitter icon">
         </div>
     </nav>
-    <section class="aboutUs">
+    <section class="aboutUs" id="about">
         <p class="aboutUsBackground">about us</p>
         <p class="aboutUsTitle">ABOUT <span>SUNA</span></p>
         <div class="aboutGrid">
@@ -75,9 +77,9 @@
             </div>
         </div>
     </section>
-    <section class="ourProjects">
+    <section class="ourProjects" id="projects">
         <p class="projectsTitle">Nuestros <span>proyectos</span></p>
-        <p class="projectsTitleBackground">our projects</p>
+        <p class="projectsTitleBackground">projects</p>
         <div class="projects">
             <div class="pr project1">
                 <p class="projectTitle">Project Title</p>
@@ -93,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="experience">
+    <section class="experience" id="clients">
         <div class="experienceContainer">
             <p class="number">12</p>
         <p class="experienceText"><span>Años de experiencia</span><br>en el mercado.</p>
@@ -154,7 +156,7 @@
         </div>
         <button>trabajemos juntos! <img src="img/arrow-right-solid.svg" alt="flecha derecha"></button>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <p class="contactTitle">Nos pongamos <span>en contacto</span></p>
         <p class="contactBackground">contact</p>
         <div class="contactInfo">
@@ -181,5 +183,7 @@
         <p class="author">by Julian Lobos</p>
         <p class="derechos">Copyrigth | Todos los derechos reservados</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

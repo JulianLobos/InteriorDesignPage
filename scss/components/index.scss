@@ -21,10 +21,26 @@ body{
                 }
             }
         }
+        .hamburgerBtn{
+            width: 32px;
+            height: 20px;
+            margin: 10px 25px;
+            cursor: pointer;
+            display: none;
+            div{
+                width: 100%;
+                height: 2px;
+                background: rgb(233, 233, 233);
+                margin: 4px auto;
+                transition: all 0.3s;
+                backface-visibility: hidden;
+                border-radius: 15px;
+            }
+        }
     }
     .hero{
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../img/bg-image.jpg");
-        height: 80vh;
+        height: 100vh;
         width: auto;
         margin: 0 0 0 150px;
 
@@ -70,7 +86,7 @@ body{
         align-items: center;
         flex-direction: column;
         width: 150px;
-        height: 80vh;
+        height: 100vh;
         left: 0;
         top: 0;
         background-color: $black-color;

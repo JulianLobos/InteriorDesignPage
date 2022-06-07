@@ -27,9 +27,23 @@ body {
           margin: 0 0 0 1.5rem;
           text-transform: uppercase;
           letter-spacing: 2px; }
+    body header .hamburgerBtn {
+      width: 32px;
+      height: 20px;
+      margin: 10px 25px;
+      cursor: pointer;
+      display: none; }
+      body header .hamburgerBtn div {
+        width: 100%;
+        height: 2px;
+        background: #e9e9e9;
+        margin: 4px auto;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 15px; }
   body .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-image.jpg");
-    height: 80vh;
+    height: 100vh;
     width: auto;
     margin: 0 0 0 150px;
     background-size: cover;
@@ -68,7 +82,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 150px;
-    height: 80vh;
+    height: 100vh;
     left: 0;
     top: 0;
     background-color: #2b2b2b; }
@@ -451,3 +465,111 @@ body {
     flex-direction: column-reverse; }
     body .contact .contactInfo .contactAdress {
       text-align: center; } }
+
+@media (max-width: 798px) {
+  body header {
+    padding: 2rem 1rem 2rem 4rem; }
+    body header .myNumber {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    body header .menuList {
+      position: absolute;
+      width: 100%;
+      padding: 0 0 0 50px;
+      background-color: #272727;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      padding: 25vh 0 0 0;
+      display: none; }
+      body header .menuList a {
+        padding: 0 0 0 50px;
+        width: 100%; }
+        body header .menuList a .menuItem {
+          padding: 0 0 0 50px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0; }
+        body header .menuList a:hover {
+          background-color: #2b2b2b; }
+    body header .hamburgerBtn {
+      display: inline-block;
+      z-index: 1;
+      margin: 0; }
+    body header #hamburgerBtn.on .one {
+      transform: rotate(45deg) translate(5px, 5px); }
+    body header #hamburgerBtn.on .two {
+      opacity: 0; }
+    body header #hamburgerBtn.on .three {
+      transform: rotate(-45deg) translate(3px, -4px); }
+  body .navigation {
+    width: 50px; }
+    body .navigation .logo {
+      font-size: 2rem;
+      line-height: 25px; }
+  body .aboutUs .aboutUsBackground {
+    font-size: 5rem; }
+  body .aboutUs .aboutUsTitle {
+    font-size: 2rem; }
+  body .aboutUs .aboutGrid div .aboutTitle {
+    margin: 2rem; }
+  body .aboutUs .aboutGrid div .aboutText {
+    margin: 2rem; }
+  body .hero {
+    margin: 0 0 0 50px; }
+    body .hero .yourInfo {
+      margin: 0 1rem 0 1rem; }
+  body .ourProjects {
+    margin: 0; }
+    body .ourProjects .projectsTitle {
+      font-size: 2rem; }
+    body .ourProjects .projectsTitleBackground {
+      font-size: 5rem; }
+    body .ourProjects .projects {
+      grid-template-columns: 100%; }
+      body .ourProjects .projects .pr {
+        height: 50vh; }
+  body .experience {
+    height: auto;
+    margin: 0 1rem 3rem 1rem; }
+    body .experience .experienceContainer {
+      padding: 0 2rem; }
+    body .experience .clients .clientsBackground {
+      font-size: 5rem;
+      transform: translateY(-11rem); }
+  body .contact {
+    height: auto; }
+    body .contact .contactTitle {
+      font-size: 2rem; }
+    body .contact .contactBackground {
+      font-size: 5rem;
+      transform: translateY(-11rem); }
+    body .contact .contactInfo {
+      height: auto; }
+      body .contact .contactInfo .contactForm form {
+        margin: 1.5rem 0;
+        grid-template-columns: 45% 45%;
+        justify-content: center; }
+        body .contact .contactInfo .contactForm form .contactName, body .contact .contactInfo .contactForm form .contactEmail {
+          grid-column: 1; }
+        body .contact .contactInfo .contactForm form .contactPhone, body .contact .contactInfo .contactForm form .contactCompany {
+          grid-column: 2; }
+        body .contact .contactInfo .contactForm form .contactMessage {
+          grid-column: 1/ span 2;
+          grid-row: 3; }
+        body .contact .contactInfo .contactForm form .contactButton {
+          grid-row: 4;
+          grid-column: 1 / span 2; }
+  body footer {
+    padding: 1rem;
+    grid-template-columns: 100%; }
+    body footer .logoFooter {
+      font-size: 2rem;
+      line-height: 25px;
+      text-align: center;
+      margin: 0 0 0.25rem 0; }
+    body footer .author, body footer .derechos {
+      font-size: 0.75rem; } }
