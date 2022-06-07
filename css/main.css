@@ -315,3 +315,75 @@ body {
           filter: invert(14%) sepia(63%) saturate(0%) hue-rotate(285deg) brightness(108%) contrast(107%);
           transform: translateX(4px);
           translate: all 0.3s ease; }
+  body .contact {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    body .contact .contactTitle {
+      text-align: center;
+      font-size: 2.75rem;
+      text-transform: uppercase; }
+      body .contact .contactTitle span {
+        color: #edc531; }
+    body .contact .contactInfo {
+      display: flex;
+      height: 50vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+      body .contact .contactInfo .contactAdress {
+        margin: 0 35px 0 0;
+        padding: 0 0 5px 0;
+        font-family: "Raleway", sans-serif; }
+        body .contact .contactInfo .contactAdress p {
+          margin: 0.25rem 0; }
+      body .contact .contactInfo .contactForm form {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 3fr 3fr 3fr; }
+        body .contact .contactInfo .contactForm form input {
+          height: 45px;
+          font-family: "Raleway", sans-serif;
+          padding: 0.75rem 1rem;
+          background-color: #464646;
+          color: white;
+          border-radius: 15px;
+          border: none; }
+        body .contact .contactInfo .contactForm form .contactName, body .contact .contactInfo .contactForm form .contactEmail {
+          grid-column: 1; }
+        body .contact .contactInfo .contactForm form .contactPhone, body .contact .contactInfo .contactForm form .contactCompany {
+          grid-column: 2; }
+        body .contact .contactInfo .contactForm form .contactMessage {
+          grid-column: 3;
+          grid-row: 1 / span 2;
+          height: 100px; }
+        body .contact .contactInfo .contactForm form .contactButton {
+          grid-row: 3;
+          grid-column: 3;
+          background-color: #edc531;
+          font-family: "Oswald", sans-serif;
+          font-weight: 600;
+          font-size: 1.25rem;
+          height: 35px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          padding: 0.25rem 1.25rem;
+          border-radius: 20px;
+          transition: all 0.3s ease;
+          border: none;
+          text-transform: uppercase;
+          cursor: pointer;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07); }
+          body .contact .contactInfo .contactForm form .contactButton img {
+            width: 16px;
+            margin: 0 0 0 4px;
+            translate: all 0.3s ease; }
+          body .contact .contactInfo .contactForm form .contactButton:hover {
+            background-color: #dbb42c; }
+            body .contact .contactInfo .contactForm form .contactButton:hover img {
+              filter: invert(14%) sepia(63%) saturate(0%) hue-rotate(285deg) brightness(108%) contrast(107%);
+              transform: translateX(4px);
+              translate: all 0.3s ease; }
